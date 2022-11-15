@@ -4,28 +4,27 @@ import Product from './componentes/Product';
 import { useState } from 'react';
 import Cardlist from './componentes/Cardlist';
 import Navbar from './componentes/Navbar';
-import Slider from './componentes/Slider';
 import Footer from './componentes/Footer';
 
 function App() {
   const [product, setProduct] = useState([
     {
       id: 1,
-      img: "https://www.reliancedigital.in/medias/Motorola-E32-Mobile-Phone-492849904-i-5-1200Wx1200H?context=bWFzdGVyfGltYWdlc3w2NTc1M3xpbWFnZS9qcGVnfGltYWdlcy9oZGUvaDU4Lzk4MzQxMDUwMTIyNTQuanBnfGEzZWExMTZiMmQ4OGE3MTViMDBkYmFkZTUyM2RjZWU5YmJjM2VmNDJiZWNhYjdhZTAxYzk5ODdmZWRhMDM2M2Y",
+      img: "https://image.oppo.com/content/dam/oppo/in/mkt/phonelist/products/find-x2-blue.png",
       name: "OPPO MOBILE",
       seller: "amazom",
       price: 15000,
     },
     {
       id: 2,
-      img: "https://5.imimg.com/data5/NG/IQ/BG/SELLER-65481850/computer-keyboard-500x500.jpg",
+      img: "https://www.tvs-e.in/wp-content/uploads/2019/12/gold-pannel-keyboard.png",
       name: "SAMSUNG KEYBOARD",
       seller: "flifcart",
       price: 1200,
     },
     {
       id: 3,
-      img: "https://i.gadgets360cdn.com/products/headphones-and-headsets/large/beats-solo-hd-wireless-headphone-832X558-1598516584.jpg",
+      img: "https://jasper-pimstorage-skullcandy.s3.us-west-1.amazonaws.com/7bb25090f641fcece00920079d2ed05b7d1626c5f9386c3eb2963e7b76251611.png",
       name: "IBALL HEADPHONE",
       seller: "myntra",
       price: 1400 ,
@@ -46,28 +45,28 @@ function App() {
     },
     {
       id: 6,
-      img: "https://rukminim1.flixcart.com/image/612/612/jmi22kw0/mixer-grinder-juicer/n/z/a/butterfly-rapid-4-jar-750-watts-original-imaf5dvgugcqyug3.jpeg?q=70",
+      img: "https://media.croma.com/image/upload/v1651665389/Croma%20Assets/Small%20Appliances/Food%20Processors/Images/251616_usd3hj.png",
       name: "BAJAJ MIXER",
       seller: "myntra",
       price: 3400 ,
     },
     {
       id: 7,
-      img: "https://5.imimg.com/data5/UE/AT/BG/SELLER-74935595/pixel-80cm-32-inch-full-hd-led-tv-pxl32he--250x250.png",
+      img: "https://images.samsung.com/is/image/samsung/p6pim/in/ua43aue65akxxl/gallery/in-uhd-au7002-425303-ua43aue65akxxl-532615671?$650_519_PNG$",
       name: "SAMSUNG TV",
       seller: "amazom",
       price: 30000,
     },
     {
       id: 8,
-      img: "https://5.imimg.com/data5/AX/RR/AL/SELLER-23242358/kora-muslin-silk-tanchoi-sarees-500x500.JPG",
+      img: "https://cdn0.weddingwire.in/vendor/0761/3_2/960/jpg/mi-world-ideal_15_761.jpeg",
       name: "PAITHANI SAREE",
       seller: "flifcart",
       price: 1200,
     },
     {
       id: 9,
-      img: "https://sc04.alicdn.com/kf/H91288dd2ebc548d0982f2d6ac019022fu/227839323/H91288dd2ebc548d0982f2d6ac019022fu.jpg",
+      img: "https://i.ytimg.com/vi/c_27igU9K0M/maxresdefault.jpg",
       name: "COTTON SHIRT",
       seller: "myntra",
       price: 1400 ,
@@ -86,7 +85,6 @@ function App() {
   return (
     <div>
       <Navbar count={cart.length} handelShow={handelShow}></Navbar>
-      {/* <Slider></Slider> */}
       {
         showCart?
         <Cardlist cart={cart}></Cardlist>:
