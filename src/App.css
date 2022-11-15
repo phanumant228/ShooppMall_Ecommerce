@@ -1,38 +1,340 @@
-.App {
+
+/* --------------------NAVBAR ---------------*/
+
+.Container{
+  height: 80px;
+  background-color: #aef798;
+  position: relative;
+}
+
+.Wrapper{
+  padding: 0px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+}
+
+.Left{
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.Language{
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.SearchContainer{
+  border: 0.5px solid lightgray;
+  display: flex;
+  align-items: center;
+  margin-left: 25px;
+  padding: 5px;
+}
+
+.Input{
+  border: none;
+}
+
+.Center{
+  flex: 1;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.Logo{
+  font-weight: bold;
+  background-color: #df98c7;
+  font-size: 30px;
+  color: rgb(233, 114, 44);
+  border: 2px solid rgb(233, 16, 16);
+  border-radius: 8px;
 }
+
+.Right{
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.MenuItem{
+  font-size: 14px;
+  cursor: pointer;
+  margin-left: 25px;
+}
+
+.supcolor{
+  font-weight: bold;
+  color: rgb(233, 19, 169);
+}
+/* ---------------------------------SLIDER----------------------------------- */
+
+.Container2{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+}
+
+.Arrow{
+  width: 50px;
+  height: 50px;
+  background-color: #b1e7e5;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  cursor: pointer;
+  opacity: 0.5;
+  z-index: 2;
+}
+
+.Wrapper2{
+  height: 100%;
+  display: flex;
+  transition: all 1.5s ease;
+}
+
+.Slide{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.ImgContainer{
+  height: 100%;
+  flex: 1;
+}
+
+.Image{
+  height: 80%;
+}
+
+.InfoContainer{
+  flex: 1;
+  padding: 50px;
+}
+
+.Title{
+  font-size: 70px;
+}
+
+.Desc{
+  margin: 50px 0px;
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 3px;
+}
+
+.Button{
+  padding: 10px;
+  font-size: 20px;
+  background-color: transparent;
+  cursor: pointer;
+}
+/* ----------------------------------------- */
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
 }
+/* -----------------------------product------------------------------- */
+.flex{
+  background-color: rgba(238, 201, 201, 0.2);
+  display: flex;
+  flex-wrap: wrap;
+}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.shoppingCart{
+  justify-content: space-between;
+  background-color: aqua;
+  padding: 20px 30px ;
+}
+
+.product-item{
+  padding: 20px;
+  flex: 1;
+    margin: 10px;
+    min-width: 280px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  background-color: #aad8e7;
+}
+
+.imgstyle{
+    padding: 20px;
+    flex: 1;
+    width: 200px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.allstyle{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* ---------------------------------CARDLIST------------------------------ */
+
+.main{
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  justify-content: space-around;
+  
+}
+
+.cardlist1{
+  display: flex;
+  justify-content: space-between;
+  border: 0.8px solid rgb(221, 96, 96);
+
+}
+
+.carddetail{
+  flex: 2;
+  display: flex;
+}
+
+.cardimag{
+  width: 100px;
+  height: 100px;
+}
+
+.cardall{
+  padding: 10px 10px;
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
+}
+
+.btn{
+  display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  border-radius: 3px;
+  width: 22px;
+  color: rgb(135, 235, 135);
+  background-color: #cc541d;
 }
 
-.App-link {
-  color: #61dafb;
+.Summary{
+  /* flex: 1; */
+  border: 0.5px solid lightgray;
+  border-radius: 10px;
+  padding: 20px 30px;
+  height: 40vh;
+  width: 50vh;
+  background-color: #f3dede;
+  border-color: #cc541d;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.SummaryItem{
+  margin: 10px;
+  /* display: flex; */
+  /* flex-direction: column; */
+  text-align: center;
+  font-weight: 30px;
+  font-size: 20px;
+}
+
+.btn2{
+  background-color: #4CAF50;
+  border-radius: 4px;
+  padding: 5px 22px;
+}
+
+/* ------------------------------------FOOTER -------------------------------------*/
+
+.Container3{
+  display: flex;
+  background-color: #e686c9;
+}
+
+.Left2{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.Logo2{
+  color: #15031b;
+}
+
+.Desc2{
+  margin: 20px 0px;
+  color: #05020e;
+  font-weight: bold;
+}
+
+.SocialContainer{
+  display: flex;
+}
+
+.SocialIcon2{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    color: rgb(194, 30, 30);
+    background-color: rgb(33, 4, 44);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+}
+
+.Center2{
+  flex: 1;
+  padding: 20px;
+}
+
+.Title2{
+  margin-bottom: 30px;
+}
+
+.List2{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.ListItem{
+    width: 50%;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.Right2{
+    flex: 1;
+    padding: 20px;
+}
+
+.ContactItem2{
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: #15031b;
+    display: flex;
+    align-items: center;
+}
+
+.Payment2{
+  width: 50%;
 }
